@@ -11,10 +11,16 @@ import com.mcode.balancetracker.com.mcode.balancetracker.data.BalanceEntry;
  */
 public class BalanceTrackerGui {
     private final Context ctx;
+
     public BalanceTrackerGui(Context ctx) {
         this.ctx = ctx;
     }
 
+    /**
+     * Displays a popup message to the screen.
+     * @param title title of the dialog
+     * @param message message to display
+     */
     public void displayMessage(String title, String message) {
         new AlertDialog.Builder(ctx)
                 .setMessage(message)
@@ -27,6 +33,10 @@ public class BalanceTrackerGui {
                 .show();
     }
 
+    /**
+     * Prompts user for balance entry.
+     * @return Balance entry object from user input
+     */
     public BalanceEntry promptBalanceEntry() {
         return null;
     }
